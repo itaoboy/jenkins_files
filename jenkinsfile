@@ -1,10 +1,14 @@
 pipeline {
     agent any
 
+    def username='jenkins_name'
+
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo 'output---:${username}'
+		ech0 'output global--${env.JENKINS_URL}'
+		echo 'Building..'
             }
         }
         stage('Test') {
