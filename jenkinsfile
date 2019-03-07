@@ -4,8 +4,7 @@ pipeline {
      stages {
         stage('Build') {
             steps {
-	        def username='jenkins_name'
-                echo 'output---:${username}'
+	        
 		ech0 'output global--${env.JENKINS_URL}'
 		echo 'Building..'
             }
