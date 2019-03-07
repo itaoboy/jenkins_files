@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
 	        
-		ech0 'output global--${env.JENKINS_URL}'
+		echo 'output global--${env.JENKINS_URL}'
 		echo 'Building..'
             }
         }
